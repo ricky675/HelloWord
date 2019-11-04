@@ -6,7 +6,7 @@
 #include<string.h>
 #include<time.h>
 //#include<sys/types.h>
-#define ERROR_EXIT(m) {perror(m); exit(EXIT_FAILURE);}
+#define ERROR_EXIT(m) do{perror(m); exit(EXIT_FAILURE);}while(0)
 
 void myDeamon()
 {
